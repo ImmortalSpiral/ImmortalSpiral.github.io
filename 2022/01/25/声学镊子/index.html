@@ -21,7 +21,11 @@
 
 
 
-<meta name="generator" content="Hexo 6.0.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"></head>
 
 <body>
     <!-- 引入首页 -->
@@ -36,7 +40,7 @@
     </li>
     
     <li class="menu-item">
-        <a href="/categories/nlp" class="menu-item-link">nlp</a>
+        <a href="/categories/nlp" class="menu-item-link">自然语言处理</a>
     </li>
     
     <li class="menu-item">
@@ -66,6 +70,10 @@
 
     <!-- 引入正文 -->
     <div id="article">
+        <!-- 前言 -->
+        
+
+
     
         <article class="post">
   <div class="post-title">
@@ -76,7 +84,39 @@
     <span class="post-time">2022-01-25</span>
   </div>
   <div class="post-content">
-    <p>hello world<br><img src="/2022/01/25/%E5%A3%B0%E5%AD%A6%E9%95%8A%E5%AD%90/sheng1.jpg" alt="sheng1">{:height=”100px” width=”100px”}</p>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<p><br> </p>
+<p>主页空荡荡的，把小时候挑战杯做的玩具搬上来。</p>
+<p>声波相互干涉能形成驻波，驻波节点处的声压能像个镊子一样夹住物体，就能实现悬浮了。通过超声波传感器的相位控制驻波节点位置的移动可以控制物体的移动。</p>
+<h3 id="声压控制："><a href="#声压控制：" class="headerlink" title="声压控制："></a>声压控制：</h3><script type="math/tex; mode=display">
+p(r) = p_0A\frac{D_f(\theta)}{d}e^{i(\phi+kd)}</script><p>\(P(r)\) 是\(r\)点声压的大小，\(P_0\) 是表示超声波振子效率的系数，\(A\)表示施加到振子电压的峰峰值，\(D_f\) 是声场的指向函数，对于圆形活塞振子来说\(D_f\)为</p>
+<script type="math/tex; mode=display">
+D_f=2J_1(kasin\theta)/kasin\theta</script><p>其中\(J_1\)是一类一阶贝塞尔函数，\(a\)是振子的半径，\(d\)是声波传播距离。\(k=2\pi/\lambda\)是波数，\(\phi\)是振子的初相位。</p>
+<p>求平面上某一点的声压，把所有振子在该点的声压做叠加就可以，求出平面上每一点的声压也得到该平面的声压分布了。</p>
+<p>如果已知平面声压分布，想求各振子初相位和振幅:</p>
+<script type="math/tex; mode=display">
+P=P_0H</script><p>其中</p>
+<script type="math/tex; mode=display">
+P=[p(r_1),p(r_2),...]^T</script><script type="math/tex; mode=display">
+P_0=[p_0^1,p_0^2,...]</script><script type="math/tex; mode=display">
+H=
+\begin{pmatrix}
+h_{11}&h_{12}&h_{13}&\cdots&h_{1n}\\
+h_{21}&h_{22}&h_{23}&\cdots&h_{2n}\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+h_{m1}&h_{m2}&h_{m3}&\cdots&h_{mn}\\
+\end{pmatrix}</script><script type="math/tex; mode=display">
+h_{ij}=\frac{D_f(\theta)}{d_{ij}} e^{ikd_{ij}}</script><p>\(P\)是所求平面每一点声压组成的列向量，\(P_0\)是振子初始振幅组成的行向量，\(H\)是距离矩阵。振子数不多的话，直接解方程就可以得到振子的初相位了，振子多的话，很不幸\(H\)是个奇异矩阵，要加上一个正则化项来解。</p>
+<h3 id="振子："><a href="#振子：" class="headerlink" title="振子："></a>振子：</h3><p>Murata MA40S4S （振子质量对悬浮效果影响挺大的，就这个牌子最好用）</p>
+<h3 id="业界大佬："><a href="#业界大佬：" class="headerlink" title="业界大佬："></a>业界大佬：</h3><p>Asier Marzo,etc</p>
+<h3 id="厉害的论文："><a href="#厉害的论文：" class="headerlink" title="厉害的论文："></a>厉害的论文：</h3><p>A volumetric display for visual, tactile and audio presentation using acoustic trapping</p>
+<h3 id="奇奇怪怪的装置："><a href="#奇奇怪怪的装置：" class="headerlink" title="奇奇怪怪的装置："></a>奇奇怪怪的装置：</h3><p>年轻的时候比较贫穷（买不起进口振子），单片机水平也不咋地。。。对悬浮物体的移动控制艰难。。。但至少我还是悬浮了好几个球！</p>
+<h4 id="声悬浮手套"><a href="#声悬浮手套" class="headerlink" title="声悬浮手套"></a>声悬浮手套</h4><p><img src="/2022/01/25/%E5%A3%B0%E5%AD%A6%E9%95%8A%E5%AD%90/sheng1.jpg" alt="sheng1"></p>
+<h4 id="悬浮大球的一个环"><a href="#悬浮大球的一个环" class="headerlink" title="悬浮大球的一个环"></a>悬浮大球的一个环</h4><p><img src="/2022/01/25/%E5%A3%B0%E5%AD%A6%E9%95%8A%E5%AD%90/sheng2m.jpg" alt="sheng2m"></p>
+<h4 id="也能浮8个小球"><a href="#也能浮8个小球" class="headerlink" title="也能浮8个小球"></a>也能浮8个小球</h4><p><img src="/2022/01/25/%E5%A3%B0%E5%AD%A6%E9%95%8A%E5%AD%90/sheng4m.jpg" alt="sheng4m"></p>
+<h4 id="这大概是个碗"><a href="#这大概是个碗" class="headerlink" title="这大概是个碗"></a>这大概是个碗</h4><p><img src="/2022/01/25/%E5%A3%B0%E5%AD%A6%E9%95%8A%E5%AD%90/sheng3m.jpg" alt="sheng3m"></p>
 
   </div>
 </article>

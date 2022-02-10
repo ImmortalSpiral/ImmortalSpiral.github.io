@@ -40,6 +40,13 @@ aside {
     height: 100%;
 }
 
+#preface {
+    margin: 1em 30px;
+    height: 50px;
+    font-size: 15px;
+    font-style: italic;
+}
+
 /* 首页 */
 #first {
     position: absolute;
