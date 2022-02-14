@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +17,7 @@
     
 <script src="/js/main.js"></script>
 
-
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
@@ -32,6 +30,8 @@
     <!-- 引入首页 -->
     
 
+    <!-- 若处于分类或文章页 -->
+    
     <!-- 引入导航 -->
     <nav>
         <ul class="menu">
@@ -74,9 +74,8 @@
         <!-- 前言 -->
         
 
-
-    
-          <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+        
+              <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
   
   <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
 <script type="text/x-mathjax-config">
@@ -158,10 +157,39 @@ h_{ij}=\frac{D_f(\theta)}{d_{ij}} e^{ikd_{ij}}</script><p>\(P\)是所求平面�
 <h4 id="这大概是个碗"><a href="#这大概是个碗" class="headerlink" title="这大概是个碗"></a>这大概是个碗</h4><p><img src="/2022/01/25/%E5%A3%B0%E5%AD%A6%E9%95%8A%E5%AD%90/sheng3m.jpg" alt="sheng3m"></p>
 
   </div>
+
+  
+      <section id="comments" class="comments">
+          <style>
+              .comments{margin:30px;padding:10px;background:#fff}
+                    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#eee}}
+          </style>
+          <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "bRvUlM5e94yPj4Dz4w7fN8D1-gzGzoHsz",
+        app_key: "m9f77rorRyCQlPXhGMWe7lPd",
+        placeholder: "",
+        avatar:"mm",
+    });
+</script>
+
+
+          </section>
+  
+
 </article>
+        
+    </div>
     
-    </div>
-    </div>
 
 </body>
 </html>
