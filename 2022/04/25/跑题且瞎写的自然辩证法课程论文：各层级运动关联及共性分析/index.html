@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    
+<link rel="stylesheet" href="/lib/bootstrap.min.css">
+
+    
+<script src="/lib/jquery-3.6.0.min.js"></script>
+
+
+    
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<script src="/js/main.js"></script>
+
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+    <!-- 引入首页 -->
+    
+
+    <!-- 若处于分类或文章页 -->
+    
+    <!-- 引入导航 -->
+    <nav>
+        <ul class="menu">
+    
+    <li class="menu-item">
+        <a href="/categories/others" class="menu-item-link">杂七杂八</a>
+    </li>
+    
+    <li class="menu-item">
+        <a href="/categories/nlp" class="menu-item-link">自然语言处理</a>
+    </li>
+    
+    <li class="menu-item">
+        <a href="/categories/md" class="menu-item-link">分子动力学模拟</a>
+    </li>
+    
+    <li class="menu-item">
+        <a href="/categories/physics" class="menu-item-link">物理场控制</a>
+    </li>
+    
+</ul>
+    </nav>
+
+    <div id="content">
+    <!-- 引入侧边栏 -->
+    <aside>
+        <!-- 侧边目录栏 -->
+<!-- 侧边目录栏 -->
+<div id="tree">
+    
+
+    
+</div>
+
+
+    </aside>
+
+    <!-- 引入正文 -->
+    <div id="article">
+        <!-- 前言 -->
+        
+
+        
+              <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+  
+
+<article class="post">
+  <div class="post-title">
+    <h2 class="title">跑题且瞎写的自然辩证法课程论文：各层级运动关联及共性分析</h2>
+  </div>
+   <div class="post-meta">
+    <span id="post-author">作者: 不朽的螺旋</span>
+    <span class="post-time">2022-04-25</span>
+  </div>
+  <div class="post-content">
+    <p><br><br>“已经有足够多的经验表明不同聚集层次自然地成为不同科学家群体的研究对象。据此，一组科学家研究夸克；另一组，原子核；另一组，原子；另一组，分子生物学；另一组，遗传学。在这一序列中，后面的部分是由前面层次的对象所构成的。但是每一层次中总有新的基本性依次序而递增。但是在每一层次中总有新的且激动人心的有效普遍原则，确不能由更加“基础”的科学自然而然地推导出来……诸如Mandel遗传律、双螺旋、量子力学、原子核裂变，谁最根本？谁最基本？谁推导了谁？从这些例子可以看出，将科学知识区分等级是十分愚蠢的，宁可说在每一层的普遍原则中都会呈现宏伟的概念。”<br>——LP Kadanoff<br><br> </p>
+<p>作为一名理工科博士生，我们需要在一个极小的领域阅读大量的文献，才能明白这个领域有什么还没解决的问题，并有一点小小的突破。而自然辩证法这门课，让我重新有了一个全局的视角，再一次回顾2000多年来科学整体发展的进程。或许我有一点理解，在每个狭小领域都存在大量技术细节，要耗费大量精力才能实现，而在较浅层的全局视角，能看到数不清的这样的小领域，里面布满无数博士生和科研人员的汗水、泪水和麻木。以我浅薄的理解，请让我斗胆在这片论文里再谈论下现代科学发展的历程及方法论，不同研究领域的同学所抱有的共同的目标，以及在今天科技最前沿处边缘学科能以何种方式交叉融合。</p>
+<p>不知道在最开始的时候，是不是有很多科学家有着和我一样的妄想，是人造生命、是长生不老、是解剖灵魂、是理解真空的结构、是探索宇宙之外。我不知我能否妄下断言，说这就是一切科学子领域所努力的共同目标。暂时不论高能物理和天体物理，针对前三个中间层次的目标，请让我讲讲到目前为止人们已经做了什么和还能做什么。<br><br> </p>
+<h4 id="近现代科学发展史："><a href="#近现代科学发展史：" class="headerlink" title="近现代科学发展史："></a>近现代科学发展史：</h4><p>1803年道尔顿创立原子论，1811年阿佛加德罗提出分子假说，1869年门捷列夫发现元素周期律。人们对物质基本组成有正确的认识，不过是在区区200年前。在20世纪初，因冶金高温测量技术及天文学方面的需要，推动了对热辐射的研究，普朗克提出了光是量子化的概念。1913年波尔基于光是量子化的思想提出原子能级是量子化的，1923年德布罗意将光的波粒二象性延伸到实物粒子的波粒二象性，1926年薛定谔依据实物粒子的波粒二象性推导出薛定谔方程，从此人们真正认识到原子的结构,明白了物体为什么会有绝缘体、导体和半导体之分。因多体薛定谔方程不好求解，人们考虑不再求解波函数而直接建立电子密度和能量的联系，1965年Kohn和Sham将问题简化为无相互作用电子体系求解[1]，Kohn-Sham方法也是密度泛函理论普遍实现的方式，从而让多种材料体系能够被计算。</p>
+<p>21世纪，分子生物学和细胞生物学蓬勃发展。合成生物学和分子模拟尝试从基本元件开始人工构造细胞；分子生物学则将组织或细胞打碎，用荧光标记看特定蛋白在细胞中的表达，用western blot、northern blot看细胞中RNA、蛋白质的表达，敲除小鼠基因观察表型。人们对细胞的分子机理逐渐有了更深刻的认识，让化学和生物交汇于一处。</p>
+<p>受多种分子机制的调控，神经细胞可以维持极性，一个神经细胞有很多树突且只有一个轴突，树突上的许多突触可以接受其他细胞传来的电信号，细胞体对这些电信号进行整合再传给轴突。同时神经元上突触具有可塑性，如依据hebb rule，强刺激可以让突触接受的信号强度增强[2]，这赋予了神经网络学习的能力。人们依据神经元的结构抽象出输出等于输入乘权重的神经网络的模型，参照视觉皮层分层处理图像信息的结构提出CNN，试图模拟海马体短期记忆提出LSTM。深度学习在语音识别和图像处理上相比于过去技术的卓越表现，引发了如今深度学习的热潮。</p>
+<p>从对原子结构的认识，到分子相互作用，到细胞内信号通路的研究，到神经元特定的形态及其学习机制，到神经网络的组成。今天的我们真正明白生命是什么，意识是什么。受神经网络运动规律的限制，人类没有自由意识，人类只理解有特定网络结构存在的东西，思维的边境空无一物，确实如哲学家所说，我们能做的只有观察、类比、归纳和演绎。动物共有相似的情感和本能，占人脑76%体积的新皮层则富有多样性，控制情绪的脑区在发育过程中已由基因决定，对所有人易于理解不易改变，上层的知识人与人之间难以理解但可以学习。<br><br> </p>
+<h4 id="神经环路和行为之间的gap："><a href="#神经环路和行为之间的gap：" class="headerlink" title="神经环路和行为之间的gap："></a>神经环路和行为之间的gap：</h4><p>学科之间尚存在的gap，或许存在着很多值得被解决的问题。如目前神经生物学可以在细胞上接电极观察电信号强度，可以用扫描电镜和荧光显微镜观察较大区域内细胞的分布，但复杂的神经环路对应的具体功能还是难以研究。研究人工智能的同学，则不断尝试怎么改网络结构能刷出高分，并找到了神经网络一些通用且有效的结构，如ResNet和LSTM中跨层的神经连接，attention中相似性的处理。这是不是预示着，人脑中有着相似的结构，其功能可以抽象成上述数学表达。人脑要在两个事物之间建立联系，比起反向传播，用相似性的机制构建一个神经环路会不会更接近生物学本质并有助于自由思考。在掌管短期记忆的海马体附近，又是否能找到类似异或神经网（较容易进行相似度计算）的结构。</p>
+<p>此外，人脑有200-250亿神经元，100-200万亿突触，平均每个神经元有4,000-10,000个突触。相比之下，在个人计算机上能跑的bert只有数万神经元，每个神经元有数百个突触，约占8GB显存。考虑充分调用4TB的磁盘存储神经网络[3]，并进行读写，可以存50亿突触，存储信息提高500倍。虽然依然只有人脑的万分之一，但若不包含运动区域，听觉区域，提高视觉和语言区域神经元的效率，似乎也有一点模拟人脑的可能，用100-1000台计算机似乎就能够实现意识。<br><br> </p>
+<h4 id="分子到细胞之间的gap："><a href="#分子到细胞之间的gap：" class="headerlink" title="分子到细胞之间的gap："></a>分子到细胞之间的gap：</h4><p>生物学家们将细胞打碎为我们提供了各分子在细胞内的含量和分子结构，但这些分子在细胞内的具体分布，如何运动，如何相互作用尚未被定量的描述。分子模拟能满足化学家和物理学家们从原子开始构造万物的理想，定量演示细胞内分子的运动和相互作用，并指导人们对细胞进行精准的改造，减少实验的消耗。充分利用组学的数据，完成对蛋白质、DNA、RNA、磷脂分子的建模，同时考虑结合机器学习的方法对运动总结局部规律以提高计算速率，扩大模拟规模，对小分子药物和纳米机器人对细胞的影响以及信号通路网络的调控有更深的理解，也是目前前进的方向[4-5]。<br><br> </p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>上述技术的发展，或许能向着通用人工智能的目标前进小小的一步，向着多种药物对细胞精确重编程前进小小的一步。其实也会怀疑，我们今天的技术手段会不会和曾经的炼金术一样仍不足以实现那最开始不切实际的妄想，人造生命、长生不老和解剖灵魂。毕竟现在的电脑距离人的智慧还有1万倍的差距，我们就已经在精密制造上做到了近乎极限，毕竟不靠数亿年来的分子组装和自然演化，我们真的能通过技术手段让每个细胞都变成我们需要的样子吗。可是至少还有前进的路，可是今天我们做到了很多过去难以想象的的事，可是仍然想永远看着新知识的产生和人类文明的进步。<br><br> </p>
+<h4 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h4><ol>
+<li>Electronic Structure: Basic Theory and Practical Methods. Richard M. Martin.</li>
+<li>Principles of Neurobiology. Liqun Luo.</li>
+<li>Graves A, Wayne G, Reynolds M, et al. Hybrid computing using a neural network with dynamic external memory[J]. Nature, 2016, 538(7626): 471-476.</li>
+<li>Marrink S J ,  Corradi V ,  Souza P C T , et al. Computational Modeling of Realistic Cell Membranes[J]. Chemical Reviews, 2019.</li>
+<li>Ingólfsson H I, Neale C, Carpenter T S, et al. Machine learning–driven multiscale modeling reveals lipid-dependent dynamics of RAS signaling proteins[J]. Proceedings of the National Academy of Sciences, 2022, 119(1).</li>
+</ol>
+
+  </div>
+
+  
+      <section id="comments" class="comments">
+          <style>
+              .comments{margin:30px;padding:10px;background:#fff}
+                    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#eee}}
+          </style>
+          <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "bRvUlM5e94yPj4Dz4w7fN8D1-gzGzoHsz",
+        app_key: "m9f77rorRyCQlPXhGMWe7lPd",
+        placeholder: "",
+        avatar:"mm",
+    });
+</script>
+
+
+          </section>
+  
+
+</article>
+        
+    </div>
+    
+
+</body>
+</html>
